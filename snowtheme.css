@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-family: Avenir;
     color: #0E1419;
     -webkit-font-smoothing: antialiased;
     line-height: 1.6rem;
@@ -18,19 +18,24 @@ body {
     overflow-x: hidden;
 }
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Rokkitt;
+    color: #DC3225;
 }
 h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Rokkitt;
+    color: #DC3225;
 }
 h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Rokkitt;
+    color: #DC3225;
 }
 h4{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Rokkitt;
+    color: #DC3225;
 }
 h5{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Rokkitt;
+    color: #DC3225;
 }
 
 #write {
@@ -169,7 +174,29 @@ dl,
 table {
     margin: 0.8em 0;
 }
-
+table th,
+table td {
+    padding: 8px;
+    line-height: 1.25rem;
+    vertical-align: top;
+    border-top: 1px solid #ddd
+}
+table th {
+    font-weight: bold
+}
+table thead th {
+    vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+    border-top: 0
+}
+table tbody+tbody {
+    border-top: 2px solid #ddd
 li > ol,
 li > ul {
     margin: 0 0;
@@ -247,9 +274,9 @@ ol:last-child {
 }
 
 blockquote {
-    background-color: #ffffff;
-    border-left: 2px solid #ebebeb;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdfdf7;
+
+    font-family: Avenir;
     padding: 10px 15px;
     color: #000000;
 }
@@ -314,12 +341,12 @@ table tr td:last-child {
 }
 
 #write .md-fences {
-    border: 1px solid #ffffff;
+    border: 1px solid #f1f1f1;
     -webkit-font-smoothing: initial;
     margin: 0.8rem 0 !important;
     padding: 0.3rem 0 !important;
     line-height: 1.43rem;
-    background-color: #ffffff !important;
+    background-color: #fdfdf7 !important;
     border-radius: 2px;
     font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
     font-size: 1rem;
@@ -335,13 +362,13 @@ table tr td:last-child {
     padding: 2px 4px;
     border-radius: 2px;
     font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
-    font-size: 0.92rem;
-    color: #000087;
-    background-color: #f8f8f8;
+    font-size: 1rem;
+    color: #667b83;
+    background-color: #f0f3f3;
 }
 
 #write .md-footnote {
-    background-color: #f8f8f8;
+    background-color: #fdfdfd;
     color: #000087;
 }
 
@@ -467,6 +494,7 @@ table tr td:last-child {
 
 .on-focus-mode blockquote {
     border-left-color: rgba(85, 85, 85, 0.12);
+    background-color: #fdfdf7
 }
 
 header,
